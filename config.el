@@ -58,3 +58,8 @@
 (cond
  ((string-equal system-type "darwin") ; macOS
   (setq mac-command-modifier 'meta)))
+
+(after! org
+  (setq org-directory "~/Documents/org")
+  (setq org-agenda-files '("~/Documents/org/agenda.org"))
+  (setq org-log-done 'time))
